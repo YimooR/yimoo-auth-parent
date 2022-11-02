@@ -1,0 +1,7 @@
+{
+  "timestamp": "2022-11-02T11:09:24.052+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "message": "",
+  "path": "/admin/system/sysRole/remove/1587751133196238850l"
+}

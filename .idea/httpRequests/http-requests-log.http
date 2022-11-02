@@ -1,0 +1,140 @@
+DELETE http://localhost:8800/admin/system/sysRole/remove/1
+Accept: */*
+
+<> 2022-11-02T203048.200.json
+
+###
+
+GET http://localhost:8800/admin/system/sysRole/findAll
+Accept: */*
+
+<> 2022-11-02T203029.200.json
+
+###
+
+DELETE http://localhost:8800/admin/system/sysRole/remove/1
+Accept: */*
+
+<> 2022-11-02T191917.200.json
+
+###
+
+POST http://localhost:8800/admin/system/sysRole/remove/1
+Accept: */*
+
+<> 2022-11-02T191858.405.json
+
+###
+
+GET http://localhost:8800/admin/system/sysRole/findAll
+Accept: */*
+
+<> 2022-11-02T191840.200.json
+
+###
+
+POST http://localhost:8800/admin/system/sysRole/remove/1
+Accept: */*
+
+<> 2022-11-02T191811.405.json
+
+###
+
+POST http://localhost:8800/admin/system/sysRole/remove/1
+Accept: */*
+
+<> 2022-11-02T191734.405.json
+
+###
+
+GET http://localhost:8800/admin/system/sysRole/remove/1
+Accept: */*
+
+<> 2022-11-02T191725.405.json
+
+###
+
+GET http://localhost:8800/admin/system/sysRole/findAll
+Accept: */*
+
+<> 2022-11-02T191722.200.json
+
+###
+
+GET http://localhost:8800/admin/system/sysRole/remove/1587751133196238850l
+Accept: */*
+
+<> 2022-11-02T191046.405.json
+
+###
+
+GET http://localhost:8800/admin/system/sysRole/findAll
+Accept: */*
+
+<> 2022-11-02T191043.200.json
+
+###
+
+GET http://localhost:8800/admin/system/sysRole/remove/1587751133196238850l
+Accept: application/json
+
+<> 2022-11-02T190924.405.json
+
+###
+
+GET http://localhost:8800/admin/system/sysRole/findAll
+Accept: */*
+
+<> 2022-11-02T190835.200.json
+
+###
+
+GET http://localhost:8800/findAll
+Accept: */*
+
+<> 2022-11-02T190825.404.json
+
+###
+
+GET http://localhost:8800/findAll
+Accept: */*
+
+<> 2022-11-02T190339.500.json
+
+###
+
+GET http://localhost:8800/findAll
+Accept: */*
+
+<> 2022-11-02T190317.404.json
+
+###
+
+GET http://localhost:8800/findAll
+Accept: application/json
+
+<> 2022-11-02T190253.404.json
+
+###
+
+GET http://localhost:8800/admin/system/sysRole/findAll
+Accept: application/json
+
+<> 2022-11-02T190120.404.json
+
+###
+
+GET http://localhost:8800/admin/system/sysRole/findAll
+Accept: application/json
+
+<> 2022-11-02T190025.404.json
+
+###
+
+GET http://localhost:8800/admin/system/sysRole/findAll
+Accept: application/json
+
+<> 2022-11-02T185936.404.json
+
+###
+

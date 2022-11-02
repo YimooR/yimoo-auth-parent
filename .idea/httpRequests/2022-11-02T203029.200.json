@@ -1,0 +1,32 @@
+[
+  {
+    "id": "2",
+    "createTime": "2021-06-01T00:38:40.000+00:00",
+    "updateTime": "2022-11-02T10:33:36.000+00:00",
+    "isDeleted": 0,
+    "param": {},
+    "roleName": "普通管理员",
+    "roleCode": "COMMON",
+    "description": "普通管理员"
+  },
+  {
+    "id": "8",
+    "createTime": "2022-06-08T09:39:04.000+00:00",
+    "updateTime": "2022-11-02T10:33:36.000+00:00",
+    "isDeleted": 0,
+    "param": {},
+    "roleName": "用户管理员",
+    "roleCode": "yhgly",
+    "description": null
+  },
+  {
+    "id": "1587750516717465602",
+    "createTime": "2022-11-02T10:16:36.000+00:00",
+    "updateTime": "2022-11-02T10:33:36.000+00:00",
+    "isDeleted": 0,
+    "param": {},
+    "roleName": "测试用户",
+    "roleCode": "testManger",
+    "description": "测试用户"
+  }
+]
