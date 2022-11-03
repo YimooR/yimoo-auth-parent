@@ -75,4 +75,54 @@ public class SysRoleController {
         IPage<SysRole> iPage =sysRoleService.selectPage(pageParam,sysRoleQueryVo);
         return Result.ok(iPage);
     }
+
+    /**
+     * 添加角色
+     */
+    @ApiOperation(value = "添加角色")
+    @PostMapping("save")
+    public Result saveRole(@RequestBody SysRole sysRole){
+        boolean isSuccess=sysRoleService.save(sysRole);
+        if(isSuccess){
+            return  Result.ok();
+        }else{
+            return Result.fail();
+        }
+    }
+
+    /**
+     * 先根据ID查询角色，再修改角色
+     */
+    @ApiOperation(value = "根据ID查询角色")
+    @PostMapping("findRoleById/{id}")
+    public Result findRoleById(@PathVariable Long id){
+        SysRole sysRole=sysRoleService.getById(id);
+        return Result.ok(sysRole);
+    }
+
+    @ApiOperation(value = "修改角色")
+    @PostMapping("update")
+    public Result updateRole(@RequestBody SysRole sysRole){
+        boolean isSuccess=sysRoleService.updateById(sysRole);
+        if(isSuccess){
+            return  Result.ok();
+        }else{
+            return Result.fail();
+        }
+    }
+
+    /**
+     * 批量删除
+     * json的数组格式对应java的List集合
+     */
+    @ApiOperation(value = "批量删除")
+    @DeleteMapping("batchDelete")
+    public Result batchDelete(@RequestBody List<Long> ids){
+        boolean isSuccess=sysRoleService.removeByIds(ids);
+        if(isSuccess){
+            return  Result.ok();
+        }else{
+            return Result.fail();
+        }
+    }
 }
