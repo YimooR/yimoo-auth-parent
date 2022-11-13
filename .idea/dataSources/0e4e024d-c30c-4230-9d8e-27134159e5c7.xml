@@ -1620,6 +1620,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <column id="397" parent="304" name="status">
       <Comment>状态（1：正常 0：停用）</Comment>
       <DataType>tinyint|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
       <Position>10</Position>
     </column>
     <column id="398" parent="304" name="create_time">

@@ -2,8 +2,10 @@ package com.yimoo.system;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.yimoo.model.system.SysRole;
+import com.yimoo.model.system.SysUser;
 import com.yimoo.system.mapper.SysRoleMapper;
 import com.yimoo.system.service.SysRoleService;
+import com.yimoo.system.service.SysUserService;
 import org.apache.ibatis.logging.stdout.StdOutImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,9 @@ public class SysRoleTest {
 
     @Autowired
     SysRoleMapper sysRoleMapper;
+
+    @Autowired
+    SysUserService sysUserService;
 
     @Test
     void demo1(){
@@ -72,7 +77,7 @@ public class SysRoleTest {
 
     @Test
     void testLogicDelete(){
-        boolean result=sysRoleService.removeById(1587751133196238851l);
+        boolean result=sysRoleService.removeById(1587751133196238852L);
         if (result){
             System.out.println("删除成功！");
         }else{
@@ -86,5 +91,19 @@ public class SysRoleTest {
         lists.add(1587751133196238850l);
         lists.add(1587751133196238851l);
         sysRoleService.removeByIds(lists);
+    }
+
+    @Test
+    void testAddUser(){
+        SysUser sysUser=new SysUser();
+        sysUser.setUsername("催催dsadsadsa");
+        sysUser.setPassword("1234");
+        sysUser.setName("dsdsds");
+        Boolean isSuccess=sysUserService.save(sysUser);
+        if(isSuccess){
+            System.out.println("插入成功！！！！！");
+        }else {
+            System.out.println("插入失败！！！！！");
+        }
     }
 }
