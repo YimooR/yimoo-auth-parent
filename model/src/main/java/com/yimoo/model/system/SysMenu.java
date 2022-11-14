@@ -21,7 +21,7 @@ public class SysMenu extends BaseEntity {
 
 	@ApiModelProperty(value = "所属上级")
 	@TableField("parent_id")
-	private Long parentId;
+	private String parentId;
 
 	@ApiModelProperty(value = "名称")
 	@TableField("name")
