@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yimoo.system.mapper.SysUserMapper">
+    <!--结果集映射-->
+    <resultMap id="sysUserMap" type="com.yimoo.model.system.SysUser" autoMapping="true"></resultMap>
+
+<!--    动态SQL查询条件-->
+    <select id="selectPage" resultMap="sysUserMap">
+       select id,username,password,name,phone,head_url,dept_id,post_id,description,status,create_time,update_time,is_deleted
+       from sys_user
+       <where>
+           <if test="vo.keyword !=null and vo.keyword !=''">
+               and (username like CONCAT('%',#{vo.keyword},'%')
+               or name like CONCAT('%',#{vo.keyword},'%')
+               or phone like CONCAT('%',#{vo.keyword},'%'))
+           </if>
+           <if test="vo.createTimeBegin!=null and vo.createTimeBegin!=''">
+               and create_time &gt;= #{vo.createTimeBegin}
+           </if>
+           <if test="vo.createTimeEnd!=null and vo.createTimeEnd!=''">
+               and create_time &lt;= #{vo.createTimeEnd}
+           </if>
+                and is_deleted=0
+       </where>
+    </select>
+</mapper>

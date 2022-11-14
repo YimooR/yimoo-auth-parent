@@ -1,0 +1,20 @@
+package com.yimoo.system.service;
+
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.yimoo.model.system.SysMenu;
+
+import java.util.List;
+
+/**
+* @author haoyang
+* @description 针对表【sys_menu(菜单表)】的数据库操作Service
+* @createDate 2022-11-14 22:10:22
+*/
+public interface SysMenuService extends IService<SysMenu> {
+
+
+    List<SysMenu> findNodes();
+
+    Boolean removeMenuById(String id);
+}
