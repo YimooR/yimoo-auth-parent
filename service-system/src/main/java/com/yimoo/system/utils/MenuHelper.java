@@ -23,7 +23,8 @@ public class MenuHelper {
         //遍历所有菜单集合
         for(SysMenu sysMenu:sysMenuList){
             //找到递归入口，parentid=0
-            if(Long.valueOf(sysMenu.getParentId())==0){
+            Long parentId= Long.valueOf(sysMenu.getParentId());
+            if(parentId==0){
                 trees.add(findChildren(sysMenu,sysMenuList));
             }
         }

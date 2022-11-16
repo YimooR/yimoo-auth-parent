@@ -4,6 +4,9 @@ package com.yimoo.system.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.yimoo.model.system.SysMenu;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
 * @author haoyang
@@ -13,7 +16,8 @@ import org.apache.ibatis.annotations.Mapper;
 */
 @Mapper
 public interface SysMenuMapper extends BaseMapper<SysMenu> {
-
+    //根据userId查询菜单权限数据
+    List<SysMenu> findMenuListUserId(@Param("userId") String userId);
 }
 
 

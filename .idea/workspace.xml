@@ -5,29 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3db41215-8bbe-4725-8fea-9d166466ab27" name="Changes" comment="更新菜单管理">
-      <change afterPath="$PROJECT_DIR$/common/common-util/target/classes/com/yimoo/common/result/Result.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-util/target/classes/com/yimoo/common/result/ResultCodeEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/yimoo/system/exception/YimooException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/controller/SysMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/mapper/SysMenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/mapper/SysUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/mapper/SysUserRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/SysMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/SysUserRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/SysUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/impl/SysUserRoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/utils/MenuHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/resources/mapper/SysMenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/resources/mapper/SysUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-system/src/main/resources/mapper/SysUserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/yimoo/common/utils/JwtHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/yimoo/common/utils/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/yimoo/common/utils/RouterHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/yimoo/model/system/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/yimoo/model/system/SysMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/controller/SysRoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/SysRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/SysRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/impl/SysRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/common-util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/common-util.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/service-util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/service-util.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/yimoo/model/vo/LoginVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/yimoo/model/vo/LoginVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/controller/SysMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/controller/SysMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/mapper/SysMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/mapper/SysMenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/SysMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/SysMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/utils/MenuHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/java/com/yimoo/system/utils/MenuHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-system/src/main/resources/mapper/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/resources/mapper/SysMenuMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +84,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/model/src/main/java/com/yimoo/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/common-util/src/main/java/com/yimoo/common/utils" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -95,6 +92,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common/common-util/src/main/java/com/yimoo/common/utils" />
       <recent name="$PROJECT_DIR$/model/src/main/java/com/yimoo/model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -102,8 +100,18 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ServiceAuthApplication">
-    <configuration name="rest-api_1 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
+    <configuration name="JwtHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yimoo.common.utils.JwtHelper" />
+      <module name="common-util" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yimoo.common.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="rest-api_1 | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
@@ -176,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JwtHelper" />
         <item itemvalue="JUnit.SysRoleTest.testAddUser" />
         <item itemvalue="JUnit.SysRoleTest.testLogicDelete" />
         <item itemvalue="JUnit.SysRoleTest.demo1" />
         <item itemvalue="HTTP Request.rest-api_1 | #2" />
-        <item itemvalue="HTTP Request.rest-api_1 | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +218,9 @@
       <workItem from="1668081389864" duration="11447000" />
       <workItem from="1668163426692" duration="1241000" />
       <workItem from="1668255051174" duration="4850000" />
-      <workItem from="1668423316120" duration="11806000" />
+      <workItem from="1668423316120" duration="12115000" />
+      <workItem from="1668515761814" duration="9969000" />
+      <workItem from="1668592994602" duration="15464000" />
     </task>
     <task id="LOCAL-00001" summary="updated pageHelper">
       <created>1667406111755</created>
@@ -233,7 +243,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668357374846</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="更新菜单管理">
+      <created>1668443464659</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668443464659</updated>
+    </task>
+    <task id="LOCAL-00005" summary="更新菜单管理">
+      <created>1668443491095</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668443491095</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

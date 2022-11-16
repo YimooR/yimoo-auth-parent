@@ -1,6 +1,7 @@
 package com.yimoo.model.vo;
 
 
+
 /**
  * 登录对象
  */

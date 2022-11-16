@@ -2,6 +2,7 @@ package com.yimoo.system.controller;
 
 import com.yimoo.common.result.Result;
 import com.yimoo.model.system.SysMenu;
+import com.yimoo.model.vo.AssginMenuVo;
 import com.yimoo.system.service.SysMenuService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -29,53 +30,64 @@ public class SysMenuController {
     //菜单列表（树形）
     @ApiOperation("菜单列表")
     @GetMapping("findNodes")
-    public Result findNodes(){
-        List<SysMenu> sysMenuList=sysMenuService.findNodes();
+    public Result findNodes() {
+        List<SysMenu> sysMenuList = sysMenuService.findNodes();
         return Result.ok(sysMenuList);
     }
 
     //添加菜单
     @ApiOperation("添加菜单")
     @PostMapping("save")
-    public Result save(@RequestBody SysMenu sysMenu){
-        Boolean isSuccess=sysMenuService.save(sysMenu);
-        if (isSuccess){
-            return  Result.ok();
-        }else {
-            return  Result.fail();
+    public Result save(@RequestBody SysMenu sysMenu) {
+        Boolean isSuccess = sysMenuService.save(sysMenu);
+        if (isSuccess) {
+            return Result.ok();
+        } else {
+            return Result.fail();
         }
     }
 
     //根据id查询
     @ApiOperation("根据id查询菜单")
     @GetMapping("findNode/{id}")
-    public Result findNode(@PathVariable String id){
-        SysMenu sysMenu=sysMenuService.getById(id);
+    public Result findNode(@PathVariable String id) {
+        SysMenu sysMenu = sysMenuService.getById(id);
         return Result.ok(sysMenu);
     }
 
     //修改菜单
     @ApiOperation("修改菜单")
     @PostMapping("update")
-    public Result update(@RequestBody SysMenu sysMenu){
-        Boolean isSuccess=sysMenuService.updateById(sysMenu);
-        if (isSuccess){
-            return  Result.ok();
-        }else {
-            return  Result.fail();
+    public Result update(@RequestBody SysMenu sysMenu) {
+        Boolean isSuccess = sysMenuService.updateById(sysMenu);
+        if (isSuccess) {
+            return Result.ok();
+        } else {
+            return Result.fail();
         }
-
     }
 
     //删除菜单
     @ApiOperation("删除菜单")
     @DeleteMapping("remove/{id}")
-    public Result remove(@PathVariable String id){
-        Boolean isSuccess=sysMenuService.removeMenuById(id);
-        if (isSuccess){
-            return  Result.ok();
-        }else {
-            return  Result.fail();
-        }
+    public Result remove(@PathVariable String id) {
+        sysMenuService.removeMenuById(id);
+        return Result.ok();
+    }
+
+    //根据角色来分配菜单
+    @ApiOperation("根据角色获取菜单")
+    @GetMapping("toAssign/{roleId}")
+    public Result toAssign(@PathVariable String roleId) {
+        List<SysMenu> list = sysMenuService.findMenuByRoleId(roleId);
+        return Result.ok(list);
+    }
+
+    //根据角色添加菜单
+    @ApiOperation("给角色分配菜单权限")
+    @PostMapping("doAssign")
+    public Result doAssign(@RequestBody AssginMenuVo assginMenuVo) {
+        sysMenuService.doAssign(assginMenuVo);
+        return Result.ok();
     }
 }

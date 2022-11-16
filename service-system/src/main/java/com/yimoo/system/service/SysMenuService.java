@@ -3,6 +3,8 @@ package com.yimoo.system.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.yimoo.model.system.SysMenu;
+import com.yimoo.model.vo.AssginMenuVo;
+import com.yimoo.model.vo.RouterVo;
 
 import java.util.List;
 
@@ -16,5 +18,13 @@ public interface SysMenuService extends IService<SysMenu> {
 
     List<SysMenu> findNodes();
 
-    Boolean removeMenuById(String id);
+    void removeMenuById(String id);
+
+    List<SysMenu> findMenuByRoleId(String roleId);
+
+    void doAssign(AssginMenuVo assginMenuVo);
+
+    List<RouterVo> getUserMenuList(String id);
+
+    List<String> getUserButtonList(String id);
 }

@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.api.R;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yimoo.common.result.Result;
+import com.yimoo.common.utils.MD5;
 import com.yimoo.model.system.SysUser;
 import com.yimoo.model.vo.SysRoleQueryVo;
 import com.yimoo.model.vo.SysUserQueryVo;
@@ -47,6 +48,9 @@ public class SysUserController {
     @ApiOperation("添加用户")
     @PostMapping("save")
     public Result save(@RequestBody SysUser sysUser){
+        //将密码加密
+        String encrypt=MD5.encrypt(sysUser.getPassword());
+        sysUser.setPassword(encrypt);
         boolean isSuccess=sysUserService.save(sysUser);
         if(isSuccess){
             return Result.ok();
